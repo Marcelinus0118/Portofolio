@@ -11,7 +11,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "music-chair",
-    role: "Ketua Seksi Musik",
+    role: "Student Gathering (FORKANITE)",
     organization: "Organisasi Kampus",
     period: "2023 - 2024",
     description:

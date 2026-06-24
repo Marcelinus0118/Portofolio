@@ -10,7 +10,6 @@ const interests = [
   { icon: Code2, label: "Web Development", description: "Membangun aplikasi web modern dan responsif" },
   { icon: Shield, label: "Cyber Security", description: "Eksplorasi keamanan sistem dan jaringan" },
   { icon: Brain, label: "Machine Learning", description: "Pengembangan model AI dan data science" },
-  { icon: BarChart3, label: "Data Analytics", description: "Analisis data dan visualisasi insight" },
 ];
 
 export function About() {
