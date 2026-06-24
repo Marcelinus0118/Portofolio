@@ -1,0 +1,68 @@
+import { Certification } from "@/types";
+
+export const certifications: Certification[] = [
+  {
+    id: "nextjs-dev",
+    title: "Software Engineering",
+    issuer: "Coursera",
+    date: "2024",
+    image: "/images/software.png",
+    credentialUrl: "https://coursera.org/verify/XQ0F1W4Q3E6L",
+  },
+  {
+    id: "ml-python",
+    title: "Generative AI for Business Intelligence (BI) Analysts",
+    issuer: "Coursera",
+    date: "2024",
+    image: "/images/ai intelligence.png",
+    credentialUrl: "https://coursera.org/verify/specialization/PSQ042UFYCZD",
+  },
+  {
+    id: "cyber-security",
+    title: "Generative AI: Introduction and Applications",
+    issuer: "Coursera",
+    date: "2024",
+    image: "/images/generative ai.png",
+    credentialUrl: "https://coursera.org/verify/FYQFUM3Z2T9B",
+  },
+  {
+    id: "laravel-dev",
+    title: "]Introduction to Deep Learning for Computer Vision",
+    issuer: "Coursera",
+    date: "2024",
+    image: "/images/mysql.png",
+    credentialUrl: "https://coursera.org/verify/2UGEI70HBIQJ",
+  },
+  {
+    id: "cert-5",
+    title: "Introduction to Deep Learning for Computer Vision",
+    issuer: "Coursera",
+    date: "2025",
+    image: "/images/deep learning.png",
+    credentialUrl: "https://coursera.org/verify/ZPF7BCF4UQR8",
+  },
+  {
+    id: "cert-6",
+    title: "Deep Learning for Undergraduate Students",
+    issuer: "coursera",
+    date: "2025",
+    image: "/images/deep learning 2.png",
+    credentialUrl: "https://coursera.org/verify/65ANU3222URI",
+  },
+  {
+    id: "cert-7",
+    title: "Intro to AR/VR/MR/XR: Technologies, Applications & Issues",
+    issuer: "Coursera",
+    date: "2025",
+    image: "/images/comgraph.png",
+    credentialUrl: "https://coursera.org/verify/PB4PAKCZOD26",
+  },
+  {
+    id: "cert-8",
+    title: "IT Project Management Essentials",
+    issuer: "Penerbit",
+    date: "2025",
+    image: "/images/project management.png",
+    credentialUrl: "https://coursera.org/verify/Q2YC6J89K4RC",
+  },
+];

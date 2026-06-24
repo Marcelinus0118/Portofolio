@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #18181b;
+  --color-primary: #6c5ce7;
+  --color-primary-dark: #5a4bd1;
+  --color-secondary: #f4f4f5;
+  --color-accent: #d4a574;
+  --color-muted: #a1a1aa;
+  --color-muted-foreground: #d4d4d8;
+  --color-border: #e4e4e7;
+  --color-card: #ffffff;
+  --color-card-foreground: #18181b;
+  --font-sans: var(--font-sans);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility container-main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility gradient-text {
+  color: var(--color-foreground);
+}
+
+@utility section-padding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .container-main {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .section-padding {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
+@media (min-width: 1024px) {
+  .container-main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --color-background: #18181b;
+    --color-foreground: #fafafa;
+    --color-secondary: #27272a;
+    --color-muted: #a1a1aa;
+    --color-muted-foreground: #71717a;
+    --color-border: #27272a;
+    --color-card: #1f1f22;
+    --color-card-foreground: #fafafa;
+  }
+}
+
+.dark {
+  --color-background: #18181b;
+  --color-foreground: #fafafa;
+  --color-secondary: #27272a;
+  --color-muted: #a1a1aa;
+  --color-muted-foreground: #71717a;
+  --color-border: #27272a;
+  --color-card: #1f1f22;
+  --color-card-foreground: #fafafa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
 }
