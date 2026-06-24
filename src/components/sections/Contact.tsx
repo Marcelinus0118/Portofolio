@@ -17,13 +17,13 @@ const contactMethods = [
   {
     icon: AtSign,
     label: "GitHub",
-    value: "github.com/Marcelinus Nugraha Pratama",
+    value: "github.com/Marcelinus0118",
     href: "https://github.com/Marcelinus0118",
   },
   {
     icon: MessageSquare,
     label: "LinkedIn",
-    value: "linkedin.com/in/Marcelinus Nugraha Pratama",
+    value: "linkedin.com/in/marcelinus-nugraha-676150288/",
     href: "https://www.linkedin.com/in/marcelinus-nugraha-676150288/",
   },
 ];
