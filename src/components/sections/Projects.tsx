@@ -57,6 +57,7 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
             alt={project.title}
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
             onError={() => setImgError(true)}
           />
         ) : (

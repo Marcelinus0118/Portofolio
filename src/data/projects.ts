@@ -12,12 +12,12 @@ export const projects: Project[] = [
   },
   {
     id: "dns-spoofing-detection",
-    title: "DNS Spoofing Detection",
+    title: "Construction Detection",
     description:
-      "Sistem deteksi DNS Spoofing menggunakan algoritma Decision Tree dan Naive Bayes untuk analisis keamanan jaringan.",
-    image: "/projects/dns-detection.png",
+      "A Personal Protective Equipment (PPE) detection system using YOLOv11 to identify helmets, safety vests, and safety shoes in construction site images.",
+    image: "/projects/detection.png",
     tags: ["Python", "Machine Learning", "Scikit-learn", "Pandas"],
-    githubUrl: "https://github.com/celnn/dns-spoofing-detection",
+    githubUrl: "https://huggingface.co/spaces/marcel0118/ppe-detection",
   },
   {
     id: "image-processing",

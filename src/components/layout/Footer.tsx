@@ -39,8 +39,8 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-bold gradient-text mb-3">Cel N</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Mahasiswa Informatika Universitas Pembangunan Jaya. Fokus pada Web
-              Development, Cyber Security, Machine Learning, dan Data Analytics.
+              Informatics student at Universitas Pembangunan Jaya. Focused on Web
+              Development, Cyber Security, Machine Learning, and Data Analytics.
             </p>
           </div>
 

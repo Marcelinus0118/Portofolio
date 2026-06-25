@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { fadeInLeft, fadeInRight, staggerContainer } from "@/lib/animations";
 import { experiences } from "@/data/experience";
-import { GraduationCap, Music, Gift } from "lucide-react";
+import { GraduationCap, Trophy, Users } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   university: GraduationCap,
-  "music-chair": Music,
-  "christmas-event": Gift,
+  "music-chair": Users,
+  "christmas-event": Trophy,
 };
 
 export function Experience() {

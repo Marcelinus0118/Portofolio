@@ -17,13 +17,13 @@ const contactMethods = [
   {
     icon: AtSign,
     label: "GitHub",
-    value: "github.com/Marcelinus0118",
+    value: "Marcelinus0118",
     href: "https://github.com/Marcelinus0118",
   },
   {
     icon: MessageSquare,
     label: "LinkedIn",
-    value: "linkedin.com/in/marcelinus-nugraha-676150288/",
+    value: "Marcelinus Nugraha",
     href: "https://www.linkedin.com/in/marcelinus-nugraha-676150288/",
   },
 ];
@@ -52,7 +52,7 @@ export function Contact() {
     <section id="contact" className="section-padding bg-secondary/50">
       <div className="container-main mx-auto">
         <SectionHeading
-          title="Get In Touch"
+          title="Contact"
           subtitle="Have a question or want to work together? Drop me a message!"
         />
 

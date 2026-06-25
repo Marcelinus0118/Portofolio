@@ -87,8 +87,8 @@ export function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Mahasiswa Informatika Universitas Pembangunan Jaya dengan passion
-            di Web Development, Cyber Security, dan Data Analytics.
+            Informatics student at Universitas Pembangunan Jaya with a passion
+            for Web Development, Cyber Security, and Data Analytics.
           </motion.p>
 
           <motion.div

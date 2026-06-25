@@ -48,6 +48,7 @@ function CertCard({ cert }: { cert: (typeof certifications)[number] }) {
             alt={cert.title}
             fill
             className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             onError={() => setImgError(true)}
           />
         ) : (

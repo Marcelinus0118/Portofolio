@@ -11,7 +11,7 @@ export function Skills() {
     <section id="skills" className="section-padding bg-secondary/50">
       <div className="container-main mx-auto">
         <SectionHeading
-          title="Skills & Technologies"
+          title="Skills"
           subtitle="Technologies and tools I have experience with"
         />
 

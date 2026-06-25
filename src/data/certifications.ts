@@ -62,7 +62,7 @@ export const certifications: Certification[] = [
     title: "IT Project Management Essentials",
     issuer: "Penerbit",
     date: "2025",
-    image: "/images/project management.png",
+    image: "/images/management.png",
     credentialUrl: "https://coursera.org/verify/Q2YC6J89K4RC",
   },
 ];

@@ -7,9 +7,9 @@ import { Code2, Shield, Brain, BarChart3, GraduationCap } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 
 const interests = [
-  { icon: Code2, label: "Web Development", description: "Membangun aplikasi web modern dan responsif" },
-  { icon: Shield, label: "Cyber Security", description: "Eksplorasi keamanan sistem dan jaringan" },
-  { icon: Brain, label: "Machine Learning", description: "Pengembangan model AI dan data science" },
+  { icon: Code2, label: "Web Development", description: "Building modern and responsive web applications" },
+  { icon: Shield, label: "Cyber Security", description: "Exploring system and network security" },
+  { icon: Brain, label: "Machine Learning", description: "Developing AI models and data science solutions" },
 ];
 
 export function About() {
@@ -47,27 +47,26 @@ export function About() {
               className="text-muted-foreground text-lg leading-relaxed mb-6 text-justify"
               variants={fadeInUp}
             >
-              Saya adalah mahasiswa Informatika di Universitas Pembangunan Jaya
-              yang memiliki ketertarikan mendalam di dunia teknologi. Dengan
-              fokus pada Web Development, Cyber Security, Machine Learning, dan
-              Data Analytics, saya terus belajar dan mengembangkan diri untuk
-              menciptakan solusi digital yang inovatif.
+              I am an Informatics student at Universitas Pembangunan Jaya
+              with a deep interest in technology. With a focus on Web
+              Development, Cyber Security, Machine Learning, and Data
+              Analytics, I continuously learn and develop myself to create
+              innovative digital solutions.
             </motion.p>
 
             <motion.p
               className="text-muted-foreground leading-relaxed text-justify"
               variants={fadeInUp}
             >
-              Saya percaya bahwa teknologi adalah alat yang powerful untuk
-              menyelesaikan masalah nyata. Melalui berbagai proyek dan
-              pengalaman organisasi, saya terus mengasah kemampuan teknis dan
-              soft skill saya.
+              I believe that technology is a powerful tool for solving
+              real-world problems. Through various projects and organizational
+              experiences, I continuously sharpen my technical and soft skills.
             </motion.p>
           </motion.div>
         </div>
 
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="flex flex-wrap justify-center gap-6"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"

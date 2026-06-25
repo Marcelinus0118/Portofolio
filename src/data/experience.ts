@@ -3,26 +3,27 @@ import { Experience } from "@/types";
 export const experiences: Experience[] = [
   {
     id: "university",
-    role: "Mahasiswa Informatika",
+    role: "Informatics Student",
     organization: "Universitas Pembangunan Jaya",
-    period: "2022 - Sekarang",
+    period: "2023 - Present",
     description:
-      "Menempuh pendidikan S1 Informatika dengan fokus pada pengembangan web, keamanan siber, dan data analytics.",
-  },
-  {
-    id: "music-chair",
-    role: "Student Gathering (FORKANITE)",
-    organization: "Organisasi Kampus",
-    period: "2023 - 2024",
-    description:
-      "Memimpin divisi musik dalam berbagai acara kampus, mengkoordinasikan tim, dan mengelola perlengkapan musik.",
+      "Pursuing a Bachelor's degree in Informatics with a focus on web development, cybersecurity, and data analytics.",
   },
   {
     id: "christmas-event",
-    role: "Ketua Seksi Perlengkapan Natal",
-    organization: "Acara Natal Kampus",
-    period: "2023",
+    role: "Student Leadership and Management Training Committee (LKMM)",
+    organization: "Campus Organizations",
+    period: "2025",
     description:
-      "Bertanggung jawab atas seluruh perlengkapan dan logistik acara Natal kampus, memastikan kelancaran acara.",
+      "Responsible for all equipment and logistics of the campus Christmas event, ensuring smooth execution.",
+  },
+  {
+    
+    id: "music-chair",
+    role: "Student Gathering (FORKANITE)",
+    organization: "Campus Organizations",
+    period: "2025- 2026",
+    description:
+      "Coordinated the preparation, inventory, and distribution of equipment required for the event.",
   },
 ];

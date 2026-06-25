@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Cel N",
   },
   description:
-    "Mahasiswa Informatika Universitas Pembangunan Jaya. Fokus pada Web Development, Cyber Security, Machine Learning, dan Data Analytics.",
+    "Informatics student at Universitas Pembangunan Jaya. Focused on Web Development, Cyber Security, Machine Learning, and Data Analytics.",
   keywords: [
     "Cel N",
     "Portfolio",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cel N | Portfolio",
     description:
-      "Mahasiswa Informatika Universitas Pembangunan Jaya. Fokus pada Web Development, Cyber Security, Machine Learning, dan Data Analytics.",
+      "Informatics student at Universitas Pembangunan Jaya. Focused on Web Development, Cyber Security, Machine Learning, and Data Analytics.",
     type: "website",
     locale: "id_ID",
     siteName: "Cel N Portfolio",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cel N | Portfolio",
     description:
-      "Mahasiswa Informatika Universitas Pembangunan Jaya. Fokus pada Web Development, Cyber Security, Machine Learning, dan Data Analytics.",
+      "Informatics student at Universitas Pembangunan Jaya. Focused on Web Development, Cyber Security, Machine Learning, and Data Analytics.",
   },
   robots: {
     index: true,
