@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Badge } from "@/components/ui/Badge";
@@ -32,64 +34,81 @@ export function Projects() {
           viewport={{ once: true, margin: "-50px" }}
         >
           {projects.map((project) => (
-            <motion.article
-              key={project.id}
-              className="group rounded-xl border border-border bg-card overflow-hidden hover:shadow-sm hover:border-primary/20 transition-all duration-200"
-              variants={fadeInUp}
-            >
-              <div className="relative overflow-hidden aspect-video bg-gradient-to-br from-primary/[0.06] to-accent/[0.06]">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-primary/20">
-                    {project.title.charAt(0)}
-                  </span>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                  <div className="flex gap-2">
-                    {project.githubUrl && (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
-                      >
-                        <GithubIcon size={14} />
-                        GitHub
-                      </a>
-                    )}
-                    {project.liveUrl && (
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition-opacity"
-                      >
-                        <ExternalLink size={14} />
-                        Live Demo
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-5">
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="primary">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </motion.article>
+            <ProjectCard key={project.id} project={project} />
           ))}
         </motion.div>
       </div>
     </section>
+  );
+}
+
+function ProjectCard({ project }: { project: (typeof projects)[number] }) {
+  const [imgError, setImgError] = useState(false);
+
+  return (
+    <motion.article
+      className="group rounded-xl border border-border bg-card overflow-hidden hover:shadow-sm hover:border-primary/20 transition-all duration-200"
+      variants={fadeInUp}
+    >
+      <div className="relative overflow-hidden aspect-video bg-gradient-to-br from-primary/[0.06] to-accent/[0.06]">
+        {!imgError ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-3xl font-bold text-primary/20">
+              {project.title.charAt(0)}
+            </span>
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <div className="flex gap-2">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                <GithubIcon size={14} />
+                GitHub
+              </a>
+            )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-white text-sm font-medium hover:opacity-90 transition-opacity"
+              >
+                <ExternalLink size={14} />
+                Live Demo
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="p-5">
+        <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">
+          {project.title}
+        </h3>
+        <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
+          {project.description}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <Badge key={tag} variant="primary">
+              {tag}
+            </Badge>
+          ))}
+        </div>
+      </div>
+    </motion.article>
   );
 }

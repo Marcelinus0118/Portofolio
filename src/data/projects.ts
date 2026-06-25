@@ -6,9 +6,9 @@ export const projects: Project[] = [
     title: "UPJ SpeakUp!",
     description:
       "Platform partisipasi mahasiswa untuk menyampaikan aspirasi dan pendapat secara digital. Dibangun dengan Laravel dan MySQL.",
-    image: "/projects/speakup.png",
+    image: "/projects/upjspeakup.png",
     tags: ["Laravel", "MySQL", "PHP", "Bootstrap"],
-    githubUrl: "https://github.com/celnn/upj-speakup",
+    githubUrl: "https://github.com/Marcelinus0118/UPJSPEAKUP",
   },
   {
     id: "dns-spoofing-detection",
